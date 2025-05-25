@@ -11,7 +11,7 @@
         <title>firstGenFlourishing</title>
         <link rel="icon" type="image/png" href="./images/favicon.jpg"/>
     </head>
-
+    <script src="main.js"></script>
     <body>
         <!-- your content here -->
         <div class="pageWrapper">
@@ -177,23 +177,59 @@
                 <section id="submit-yours" class="pagelevel">
                     <div class="container">
                         <h2>submit yours</h2>
-                        <div class="form">
-                            <div class="name">
-                                <input type="text"/>
+                        <form id="essayForm" class="form">
+                            <div class="layout">
+                                <input type="hidden" name="access_key" value="4dc5ba36-ed76-41c2-b2ec-7dbd767005b3">
+                                <input type="hidden" name="subject" value="Essay Submission">
+                                <div class="left">
+                                    <p>Enter your full name:</p>
+                                    <input type="text" name="name" placeholder="Your Full Name" class="form-inputs" required>
+                                    <p>Enter your email:</p>
+                                    <input type="email" name="email" placeholder="Your Email" class="form-inputs" required>
+                                    <p>Copy and paste your full essay:</p>
+                                    <textarea name="essay" placeholder="Your Essay" class="form-inputs" required rows="9"></textarea>
+                                </div>
+                                <div class="right">
+                                    <div class="question1">
+                                        <p>What type of essay are you submitting?</p>
+                                        <label>
+                                            <input type="radio" name="question1" value="Personal statement" checked> Personal statement 
+                                        </label><br>
+                                        <label>
+                                            <input type="radio" name="question1" value="Supplemental essay"> Supplemental essay
+                                        </label><br>
+                                        <label>
+                                            <input type="radio" name="question1" value="PIQ"> PIQ
+                                        </label><br>
+                                    </div>
+                                    <div class="question2">
+                                        <p>What specific feedback are you looking for? (Select all that apply)</p>
+                                        <label>
+                                            <input type="checkbox" name="question2" value="Content and ideas"> Content and ideas
+                                        </label><br>
+                                        <label>
+                                            <input type="checkbox" name="question2" value="Structure and grammar"> Structure and grammar
+                                        </label><br>
+                                        <label>
+                                            <input type="checkbox" name="question2" value="Clarity and flow"> Clarity and flow
+                                        </label><br>
+                                        <label>
+                                            <input type="checkbox" name="question2" value="Meeting the prompt's requirements"> Meeting the prompt's requirements
+                                        </label><br>
+                                        <label>
+                                            <input type="checkbox" name="question2" value="Overall impression"> Overall impression
+                                        </label><br>
+                                        <label class="other">
+                                            <input type="checkbox" name="question2" value="Other" id="otherCheckbox"> Other:
+                                            <input type="text" name="question2" placeholder="Please specify" id="otherInput" style="margin: 0; padding: 8px;" disabled>
+                                        </label><br>
+                                    </div>
+                                    <p id="errorMessage" style="color: red; height: 20px; margin-top: 5px;"></p>
+                                    <button type="submit">Submit</button>
+                                </div>
                             </div>
-                            <div class="email">
-                                <input type="text"/>
-                            </div>
-                            <div class="essay">
-                                <!--essay upload-->
-                            </div>
-                            <div class="type">
-                                <!--type of essay multiple choice-->
-                            </div>
-                            <div class="select-all">
-                                <!--select all-->
-                            </div>
-                        </div>
+                        </form>
+                        <p id="formMessage" style="margin-top: 10px;"></p>
                     </div>
                 </section>
                 <!--Join Us section-->
@@ -201,18 +237,34 @@
                     <div class="container">
                         <h2>join us!</h2>
                         <div class="form">
-                           <div class="name">
-                                <input type="text"/>
-                            </div>
-                            <div class="email">
-                                <input type="text"/>
-                            </div>
-                            <div class="resume">
-                                <!--resume upload-->
-                            </div>
-                            <div class="questions">
-                                <input type="text"/>
-                            </div>
+                           <div class="grid">
+                                <div class="card1">
+                                    <h3>info</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id. Pretium tellus duis convallis tempus leo eu aenean. Urna tempor pulvinar vivamus fringilla lacus nec metus. Iaculis massa nisl malesuada lacinia integer nunc posuere. Semper vel class aptent taciti sociosqu ad litora. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Dis parturient montes nascetur ridiculus mus donec rhoncus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Purus est efficitur laoreet mauris pharetra vestibulum fusce.</p>
+                                </div>
+                                <div class="card2">
+                                    <form id="joinForm" class="form">
+                                        <input type="hidden" name="access_key" value="4dc5ba36-ed76-41c2-b2ec-7dbd767005b3">
+                                        <input type="hidden" name="subject" value="Join Us Submission">
+                                        <div class="layout">
+                                            <p>Enter your full name:</p>
+                                            <input type="text" name="name" placeholder="Your Full Name" class="form-inputs" required>
+                                            <p>Enter your email:</p>
+                                            <input type="email" name="email" placeholder="Your Email" class="form-inputs" required>
+                                            <p>What would you like to do?</p>
+                                                <label>
+                                                    <input type="radio" name="question1" value="Editor" checked> Editor
+                                                </label><br>
+                                                <label>
+                                                    <input type="radio" name="question1" value="Mentor"> Mentor
+                                                </label><br>
+                                            <p id="errorMessage" style="color: red; height: 20px; margin-top: 5px;"></p>
+                                            <button type="submit">Submit</button>
+                                        </div>
+                                    </form>
+                                    <p id="joinMessage" style="margin-top: 10px;"></p>
+                                </div>
+                           </div>
                         </div>
                     </div>
                 </section>
