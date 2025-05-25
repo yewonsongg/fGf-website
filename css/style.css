@@ -1,0 +1,482 @@
+@font-face {
+  font-family: "Abhaya";
+  src: url("../fonts/AbhayaLibre-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Abhaya1";
+  src: url("../fonts/AbhayaLibre-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  z-index: 0;
+  overflow-x: hidden;
+}
+
+.pageWrapper {
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.textbody {
+  position: relative;
+}
+
+.navbar {
+  background: #1f5114;
+  height: 80px;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.nav-link {
+  color: #f1f1f1 !important;
+  transition: color 0.2s;
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: #fcf1c5 !important;
+  text-decoration: none;
+  background: none;
+}
+
+.navbar, .nav-brand, .nav-link {
+  font-family: "Abhaya", sans-serif;
+  font-size: 20px;
+  color: #F6F6EA;
+}
+
+.navbar-brand {
+  font-family: "Abhaya1", sans-serif;
+  font-size: 30px;
+  color: #F6F6EA;
+  transition: color 0.2s;
+  margin-right: 30px;
+}
+
+.navbar-brand:hover, .navbar-brand:focus {
+  color: #fcf1c5 !important;
+  text-decoration: none;
+  background: none;
+}
+
+h1, h2 {
+  font-family: "Abhaya1", sans-serif;
+  font-size: 85px;
+}
+
+.pagelevel {
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+}
+
+#landing {
+  background-color: #1F5114;
+  min-height: 100vh;
+  max-height: 100vh;
+}
+#landing .textbox {
+  color: #F6F6EA;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 85px;
+  font-family: "Abhaya1", sans-serif;
+  max-width: 800px;
+}
+#landing p {
+  font-family: "Abhaya", sans-serif;
+  font-size: 28px;
+}
+#landing .container {
+  margin: 150px 500px 100px 100px;
+  padding: 0;
+}
+#landing .socials {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 16px;
+}
+#landing .icon {
+  cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+}
+#landing .connect p {
+  font-family: "Abhaya", sans-serif;
+  font-size: 22px;
+  color: #F6F6EA;
+  padding-bottom: 0;
+  width: 150px;
+}
+#landing .connect {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#ourmission {
+  min-height: 100vh;
+  max-height: 100vh;
+  padding: 0;
+}
+#ourmission .container {
+  padding: 0;
+  max-width: 100%;
+}
+#ourmission .mission-slides,
+#ourmission #carousel,
+#ourmission .carousel-inner,
+#ourmission .carousel-item,
+#ourmission .carousel-item img {
+  width: 100vw;
+  height: 100vh;
+}
+#ourmission .carousel-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#winner {
+  background-color: #1F5114;
+  min-height: 50vh;
+  max-height: 100vh;
+  align-content: center;
+}
+#winner .container {
+  margin: 0;
+  padding: 10px 50px;
+  max-width: 100%;
+}
+#winner .textbox {
+  color: #F6F6EA;
+  max-width: 450px;
+  justify-self: right;
+  align-self: center;
+  margin-left: auto;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#winner .img-fluid {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+#winner .winner-flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: row;
+  padding: 30px 0;
+}
+#winner .winner-card1, #winner .winner-card2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+#winner .winner-card1 .winner1, #winner .winner-card1 .winner2, #winner .winner-card2 .winner1, #winner .winner-card2 .winner2 {
+  color: #F6F6EA;
+  font-family: "Abhaya", sans-serif;
+  font-size: 24px;
+  margin-top: 0.75rem;
+}
+
+.winner-card2 {
+  margin-left: 1000px;
+  margin-right: 0;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+#who-we-are {
+  background-color: #F6F6EA;
+  min-height: 175vh;
+  max-height: 100vh;
+  align-items: flex-start;
+}
+#who-we-are .container {
+  padding-top: 50px;
+}
+#who-we-are #heading {
+  grid-column: 1/-1;
+  font-size: 80px;
+  justify-self: center;
+  color: #1F5114;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#who-we-are .cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  max-width: 950px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 30px 0;
+}
+#who-we-are .col {
+  background-color: #598F5E;
+  border-radius: 25px;
+  width: 400px;
+  height: 600px;
+  padding: 1rem;
+  filter: drop-shadow(0px 4px 100px rgba(0, 0, 0, 0.25));
+  margin-left: auto;
+  margin-right: auto;
+}
+#who-we-are .img {
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+#who-we-are h3 {
+  font-family: "Abhaya1", serif;
+  font-size: 35px;
+  color: #F6F6EA;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#who-we-are p {
+  font-size: 17px;
+  font-family: "Abhaya", serif;
+  text-align: center;
+  color: #F6F6EA;
+}
+#who-we-are .card {
+  gap: 1rem;
+  background-color: #598F5E;
+  border-radius: 25px;
+  outline: none !important;
+  border: none !important;
+}
+#who-we-are .card-body {
+  padding: 0;
+}
+#who-we-are h2 {
+  color: #1F5114;
+}
+#who-we-are .grid2 {
+  padding: 80px 0;
+}
+#who-we-are .partner-card {
+  background-color: #A8C082;
+  margin-top: 30px;
+  border-radius: 25px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+#who-we-are .partner-img {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#who-we-are .card-title {
+  padding-top: 23px;
+}
+#who-we-are .partner-info {
+  font-size: 19px;
+  padding: 10px;
+}
+
+#stories {
+  background-color: #598F5E;
+  min-height: 100vh;
+  max-height: 100vh;
+}
+#stories .container {
+  padding: 0;
+  margin: 0 auto;
+  min-height: 80vh;
+}
+#stories h2 {
+  color: #F6F6EA;
+  margin-bottom: 2rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#stories .story-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 2rem;
+}
+#stories .stories {
+  background-color: #f6f6ea;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+#stories .story1, #stories .story2, #stories .story3, #stories .story4, #stories .story5 {
+  padding: 1rem;
+}
+#stories .story1 .story1-title, #stories .story1 .story2-title, #stories .story1 .story3-title, #stories .story1 .story4-title, #stories .story1 .story5-title, #stories .story2 .story1-title, #stories .story2 .story2-title, #stories .story2 .story3-title, #stories .story2 .story4-title, #stories .story2 .story5-title, #stories .story3 .story1-title, #stories .story3 .story2-title, #stories .story3 .story3-title, #stories .story3 .story4-title, #stories .story3 .story5-title, #stories .story4 .story1-title, #stories .story4 .story2-title, #stories .story4 .story3-title, #stories .story4 .story4-title, #stories .story4 .story5-title, #stories .story5 .story1-title, #stories .story5 .story2-title, #stories .story5 .story3-title, #stories .story5 .story4-title, #stories .story5 .story5-title {
+  color: #1F5114;
+  font-family: "Abhaya1", sans-serif;
+  font-size: 32px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+#stories .story1 .story1-yap, #stories .story1 .story2-yap, #stories .story1 .story3-yap, #stories .story1 .story4-yap, #stories .story1 .story5-yap, #stories .story2 .story1-yap, #stories .story2 .story2-yap, #stories .story2 .story3-yap, #stories .story2 .story4-yap, #stories .story2 .story5-yap, #stories .story3 .story1-yap, #stories .story3 .story2-yap, #stories .story3 .story3-yap, #stories .story3 .story4-yap, #stories .story3 .story5-yap, #stories .story4 .story1-yap, #stories .story4 .story2-yap, #stories .story4 .story3-yap, #stories .story4 .story4-yap, #stories .story4 .story5-yap, #stories .story5 .story1-yap, #stories .story5 .story2-yap, #stories .story5 .story3-yap, #stories .story5 .story4-yap, #stories .story5 .story5-yap {
+  color: #1F5114;
+  font-family: "Abhaya", sans-serif;
+  font-size: 18px;
+  padding: 0 10px;
+}
+#stories .story1 {
+  grid-column: span 2;
+  height: 250px;
+}
+#stories .story2 {
+  grid-column: span 1;
+  grid-row: 1/2;
+  height: 250px;
+}
+#stories .story2 .story2-title {
+  margin: 0;
+}
+#stories .story3 {
+  grid-column: span 1;
+  height: 250px;
+}
+#stories .story3 .story3-title {
+  margin: 0;
+}
+#stories .story4 {
+  grid-column: span 2;
+  height: 250px;
+}
+#stories .story5 {
+  grid-column: span 2;
+  height: 250px;
+}
+
+#submit-yours {
+  background-color: #F6F6EA;
+  min-height: 100vh;
+  max-height: 100vh;
+  padding: 0;
+}
+#submit-yours .container {
+  padding-top: 50px;
+}
+#submit-yours h2 {
+  color: #1f5114;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 85px;
+  font-family: "Abhaya1", sans-serif;
+}
+#submit-yours .form {
+  background-color: #A8C082;
+  max-width: 1320px;
+  height: 600px;
+  border-radius: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#join-us {
+  background-color: #1F5114;
+  min-height: 33vh;
+  max-height: 100vh;
+}
+#join-us h2 {
+  color: #F6F6EA;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 85px;
+  font-family: "Abhaya1", sans-serif;
+}
+
+#footer {
+  background-color: #F6F6EA;
+  min-height: 33vh;
+  max-height: 100vh;
+}
+#footer .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+#footer .links a {
+  font-family: "Abhaya1", sans-serif;
+  font-size: 20px;
+  color: #1F5114;
+  transition: color 0.2s ease;
+  margin-right: 30px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 20px;
+}
+#footer .links a:hover, #footer .links a:focus {
+  color: #13310c;
+}
+#footer .footer-contact {
+  display: flex;
+  text-align: right;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-end;
+}
+#footer p {
+  margin: 0;
+  text-align: center;
+  padding-bottom: 20px;
+  color: #1F5114;
+  font-family: "Abhaya1", sans-serif;
+}
+#footer .questions {
+  padding: 0;
+  font-family: "Abhaya1", sans-serif;
+  font-size: 20px;
+  color: #1F5114;
+}
+#footer .connect {
+  font-family: "Abhaya1", sans-serif;
+  font-size: 19px;
+  color: #1F5114;
+  padding-bottom: 0;
+}
+#footer .icon {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+#footer .icons {
+  display: flex;
+  gap: 1rem;
+  padding-right: 12.5px;
+  cursor: pointer;
+}
+#footer .footer-contact a {
+  font-family: "Abhaya1", sans-serif;
+  font-size: 20px;
+  color: #1F5114;
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+#footer .footer-contact a:hover, #footer .footer-contact a:focus {
+  color: #13310c;
+}/*# sourceMappingURL=style.css.map */
