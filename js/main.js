@@ -93,3 +93,31 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+  // Fix scroll behavior after offcanvas closes
+  document.addEventListener('DOMContentLoaded', () => {
+    const links = document.querySelectorAll('.offcanvas .nav-link');
+
+    links.forEach(link => {
+      link.addEventListener('click', (e) => {
+        // get the href target (e.g., #submit-yours)
+        const targetId = link.getAttribute('href');
+
+        // wait for offcanvas to close before scrolling
+        const offcanvasEl = document.querySelector('.offcanvas.show');
+        if (offcanvasEl) {
+          const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
+          bsOffcanvas.hide();
+
+          // delay scrolling slightly to allow offcanvas to close first
+          setTimeout(() => {
+            const target = document.querySelector(targetId);
+            if (target) {
+              target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }, 300); // matches offcanvas close animation
+        }
+      });
+    });
+  });
+

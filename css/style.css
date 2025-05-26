@@ -244,7 +244,7 @@ h1, h2 {
   width: 400px;
   height: 600px;
   padding: 1rem;
-  filter: drop-shadow(0px 4px 100px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 4px 75px rgba(0, 0, 0, 0.25));
   margin-left: auto;
   margin-right: auto;
 }
@@ -332,16 +332,15 @@ h1, h2 {
   border-radius: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
-#stories .story1, #stories .story2, #stories .story3, #stories .story4, #stories .story5 {
-  padding: 1rem;
-}
-#stories .story1 .story1-title, #stories .story1 .story2-title, #stories .story1 .story3-title, #stories .story1 .story4-title, #stories .story1 .story5-title, #stories .story2 .story1-title, #stories .story2 .story2-title, #stories .story2 .story3-title, #stories .story2 .story4-title, #stories .story2 .story5-title, #stories .story3 .story1-title, #stories .story3 .story2-title, #stories .story3 .story3-title, #stories .story3 .story4-title, #stories .story3 .story5-title, #stories .story4 .story1-title, #stories .story4 .story2-title, #stories .story4 .story3-title, #stories .story4 .story4-title, #stories .story4 .story5-title, #stories .story5 .story1-title, #stories .story5 .story2-title, #stories .story5 .story3-title, #stories .story5 .story4-title, #stories .story5 .story5-title {
+#stories .story-title {
   color: #1F5114;
   font-family: "Abhaya1", sans-serif;
   font-size: 32px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  padding-bottom: 0;
 }
-#stories .story1 .story1-yap, #stories .story1 .story2-yap, #stories .story1 .story3-yap, #stories .story1 .story4-yap, #stories .story1 .story5-yap, #stories .story2 .story1-yap, #stories .story2 .story2-yap, #stories .story2 .story3-yap, #stories .story2 .story4-yap, #stories .story2 .story5-yap, #stories .story3 .story1-yap, #stories .story3 .story2-yap, #stories .story3 .story3-yap, #stories .story3 .story4-yap, #stories .story3 .story5-yap, #stories .story4 .story1-yap, #stories .story4 .story2-yap, #stories .story4 .story3-yap, #stories .story4 .story4-yap, #stories .story4 .story5-yap, #stories .story5 .story1-yap, #stories .story5 .story2-yap, #stories .story5 .story3-yap, #stories .story5 .story4-yap, #stories .story5 .story5-yap {
+#stories p {
   color: #1F5114;
   font-family: "Abhaya", sans-serif;
   font-size: 18px;
@@ -356,15 +355,9 @@ h1, h2 {
   grid-row: 1/2;
   height: 250px;
 }
-#stories .story2 .story2-title {
-  margin: 0;
-}
 #stories .story3 {
   grid-column: span 1;
   height: 250px;
-}
-#stories .story3 .story3-title {
-  margin: 0;
 }
 #stories .story4 {
   grid-column: span 2;
@@ -380,9 +373,6 @@ h1, h2 {
   min-height: 100vh;
   max-height: 100vh;
   padding: 0;
-}
-#submit-yours .container {
-  padding-top: 50px;
 }
 #submit-yours h2 {
   color: #1f5114;
@@ -468,7 +458,7 @@ h1, h2 {
 }
 #join-us .card1, #join-us .card2 {
   background-color: #F6F6EA;
-  height: 480px;
+  height: 490px;
   width: 500px;
   border-radius: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -482,13 +472,13 @@ h1, h2 {
 #join-us .card1 p {
   color: #A8C082;
   font-family: "Abhaya", sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   padding: 0 20px;
 }
 #join-us .card2 {
   color: #A8C082;
   font-family: "Abhaya", sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   padding: 20px;
 }
 #join-us .card2 p {
