@@ -148,18 +148,21 @@ h1, h2 {
 #ourmission .carousel-item img {
   -o-object-fit: cover;
      object-fit: cover;
+  height: 100vh;
+  -o-object-position: center;
+     object-position: center;
 }
 
 #winner {
   background-color: #1F5114;
   min-height: 50vh;
-  max-height: 100vh;
   align-content: center;
 }
 #winner .container {
   margin: 0;
   padding: 10px 50px;
   max-width: 100%;
+  height: 860px;
 }
 #winner .textbox {
   color: #F6F6EA;
@@ -297,13 +300,22 @@ h1, h2 {
   border-bottom-left-radius: 20px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 400px;
 }
 #who-we-are .card-title {
   padding-top: 23px;
 }
 #who-we-are .partner-info {
   font-size: 19px;
-  padding: 10px;
+  padding: 30px;
+}
+#who-we-are .partner-links a {
+  color: #F6F6EA;
+}
+#who-we-are .partner-links {
+  font-size: 19px;
 }
 
 #stories {
@@ -337,14 +349,16 @@ h1, h2 {
   font-family: "Abhaya1", sans-serif;
   font-size: 32px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  padding: 10px;
+  padding: 15px;
   padding-bottom: 0;
+  margin-bottom: 0;
 }
 #stories p {
   color: #1F5114;
   font-family: "Abhaya", sans-serif;
   font-size: 18px;
-  padding: 0 10px;
+  padding: 0 15px;
+  padding-right: 0;
 }
 #stories .story1 {
   grid-column: span 2;
@@ -366,6 +380,25 @@ h1, h2 {
 #stories .story5 {
   grid-column: span 2;
   height: 250px;
+}
+#stories .story-img {
+  width: 150px !important;
+  height: 150px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50% !important;
+  align-self: center;
+  margin: 0 15px;
+  -o-object-position: center;
+     object-position: center;
+}
+#stories .flex {
+  display: flex;
+  align-items: flex-start;
+  height: 250px;
+}
+#stories .text {
+  width: 460px;
 }
 
 #submit-yours {
@@ -468,6 +501,10 @@ h1, h2 {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: "Abhaya", sans-serif;
   padding: 20px;
+}
+#join-us .card1 {
+  height: 325px;
+  align-self: center;
 }
 #join-us .card1 p {
   color: #A8C082;

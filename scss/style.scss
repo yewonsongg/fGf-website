@@ -147,18 +147,20 @@ h1, h2 {
     }
     .carousel-item img {
         object-fit: cover;
+        height: 100vh;
+        object-position: center;
     }
 }
 
 #winner {
     background-color: #1F5114;
     min-height: 50vh;
-    max-height: 100vh;
     align-content: center;
     .container {
         margin: 0;
         padding: 10px 50px;
         max-width: 100%;
+        height: 860px;
     }
     .textbox {
         color: #F6F6EA;
@@ -280,7 +282,7 @@ h1, h2 {
         padding: 80px 0;
     }
     .partner-card {
-        background-color: #A8C082;; 
+        background-color: #A8C082;
         margin-top: 30px;
         border-radius: 25px;
         display: flex;
@@ -292,13 +294,21 @@ h1, h2 {
         border-bottom-left-radius: 20px;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
+        object-fit: contain;
+        max-height: 400px;
     }
     .card-title {
         padding-top: 23px;
     }
     .partner-info {
         font-size: 19px;
-        padding: 10px;
+        padding: 30px;
+    }
+    .partner-links a {
+        color: #F6F6EA;
+    }
+    .partner-links {
+        font-size: 19px;
     }
 }
 
@@ -333,14 +343,16 @@ h1, h2 {
         font-family: 'Abhaya1', sans-serif;
         font-size: 32px;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        padding: 10px;
+        padding: 15px;
         padding-bottom: 0;
+        margin-bottom: 0;
     }
     p {
         color: #1F5114;
         font-family: 'Abhaya', sans-serif;
         font-size: 18px;
-        padding: 0 10px;
+        padding: 0 15px;
+        padding-right: 0;
     }
     .story1 {
         grid-column: span 2;
@@ -362,6 +374,23 @@ h1, h2 {
     .story5 {
     grid-column: span 2;
     height: 250px;
+    }
+    .story-img {
+        width: 150px !important;
+        height: 150px !important;
+        object-fit: cover;
+        border-radius: 50% !important;
+        align-self: center;
+        margin: 0 15px;
+        object-position: center;
+    }
+    .flex {
+        display: flex;
+        align-items: flex-start;
+        height: 250px;
+    }
+    .text {
+        width: 460px;
     }
 }
 
@@ -464,6 +493,10 @@ h1, h2 {
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         font-family: 'Abhaya', sans-serif;
         padding: 20px;
+    }
+    .card1 {
+        height: 325px;
+        align-self: center;
     }
     .card1 p {
         color: #A8C082;

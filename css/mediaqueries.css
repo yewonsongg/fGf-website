@@ -57,12 +57,39 @@
     flex-direction: column;
     align-items: flex-start;
   }
+  #ourmission .container {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  #ourmission .carousel-item img {
+    width: 100vw;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #ourmission picture img {
+    height: auto;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #ourmission .carousel-item {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  #ourmission img {
+    width: 100%;
+    min-height: 935px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   #winner {
     padding-top: 68px;
     min-height: 100vh;
   }
   #winner .container {
     padding: 10px 25px;
+    height: 1000px;
   }
   #winner .img-fluid {
     width: 150px;
@@ -116,8 +143,9 @@
     content: " ";
   }
   .flex {
-    display: grid;
+    display: flex;
     grid-template-rows: min-content min-content;
+    flex-direction: column;
   }
   #who-we-are {
     scroll-margin-top: 68px;
@@ -129,6 +157,7 @@
   #who-we-are .container {
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-bottom: 30px;
   }
   #who-we-are #heading, #who-we-are #heading2 {
     font-size: 40px;
@@ -166,13 +195,23 @@
   #who-we-are .grid2 #heading2 {
     justify-self: center;
   }
+  #who-we-are .grid2 h3 {
+    margin-top: 10px;
+  }
   #who-we-are .grid2 .partner-card {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
+    width: 350px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   #who-we-are .grid2 .partner-card .partner-img {
-    margin: 23px auto 10px auto;
+    margin: 0;
+    height: 350px;
+    width: 350px;
+    border-bottom-left-radius: 0;
   }
   #who-we-are .grid2 .partner-card .card-body {
     height: 100%;
@@ -183,11 +222,16 @@
   }
   #who-we-are .grid2 .partner-card .card-body p {
     font-size: 12px;
+    padding: 20px;
+  }
+  #who-we-are .grid2 .partner-card .partner-info {
+    padding: 20px;
+    margin: 0;
   }
   #stories {
     max-height: unset;
     padding-top: 68px;
-    display: block;
+    display: flex;
   }
   #stories .container {
     display: flex;
@@ -210,9 +254,22 @@
     padding: 10px 25px 10px 25px;
     gap: 20px;
   }
+  #stories .container .text {
+    order: 2;
+    height: 400px;
+    width: 350px;
+  }
+  #stories .container .story-img {
+    order: 1;
+  }
+  #stories .container .flex {
+    align-items: center;
+    padding: 10px;
+  }
   #stories p {
     font-size: 17px;
     text-align: center;
+    padding: 0 10px;
   }
   #stories .story1,
   #stories .story2,
@@ -221,6 +278,10 @@
   #stories .story5 {
     grid-column: span 1;
     height: auto;
+    width: 380px;
+  }
+  #stories .story1, #stories .story4, #stories .story5 {
+    height: 450px;
   }
   #submit-yours {
     padding-top: 68px;
@@ -263,6 +324,9 @@
   #join-us .card1, #join-us .card2 {
     padding: 20px;
     height: 500px;
+  }
+  #join-us .card1 {
+    height: 450px;
   }
   #join-us .card1,
   #join-us .card2,
