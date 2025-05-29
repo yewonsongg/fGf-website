@@ -189,7 +189,7 @@
   }
   #who-we-are {
     align-items: start;
-    min-height: 250vh;
+    min-height: 230vh;
   }
   #who-we-are .container {
     padding: 0;
@@ -322,7 +322,7 @@
   }
   #submit-yours {
     display: flex;
-    min-height: 160vh;
+    min-height: 170vh;
     padding-top: 80px;
     align-items: start;
   }
@@ -341,7 +341,7 @@
     grid-template-columns: 1fr;
   }
   #submit-yours .form {
-    height: 1050px;
+    height: 1030px;
     padding: 20px;
   }
   #submit-yours .form-inputs {
