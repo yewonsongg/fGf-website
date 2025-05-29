@@ -1,5 +1,9 @@
-// Mobile styles for screens ≤ 768px
 @media (max-width: 768px) {
+    html, body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden !important;
+    }
     h1, h2 {
         font-size: 40px;
     }
@@ -8,8 +12,14 @@
     }
     .navbar-brand {
         font-size: 24px;
-        margin-right: 10px;
     }
+    .navbar-brand,
+    .navbar-brand:link,
+    .navbar-brand:visited,
+    .navbar-brand:focus,
+    .navbar-brand:active {
+        margin-right: 0;
+    }   
     .navbar-toggler {
         outline: none !important;
         box-shadow: none !important;
@@ -50,14 +60,16 @@
 
 
     #landing {
+        min-height: 110vh;
         .container {
             grid-template-columns: 1fr;
             text-align: center;
-            justify-items: center;
             max-width: 100%;
             gap: 0;
             padding: 0;
-            padding-top: 100px;
+            justify-items: center;
+            border: 20px;
+            padding-top: 110px;
         }
 
         .textbox {
@@ -121,12 +133,11 @@
     }
 
     #winner {
+        min-height: 135vh;
         .container {
             padding: 10px 25px;
             height: 1000px;
         }
-        padding-top: 68px;
-        min-height: 100vh;
         .img-fluid {
             width: 150px;
             height: 150px;
@@ -262,8 +273,7 @@
     }
 
     #stories {
-        max-height: unset;
-        padding-top: 68px;
+        min-height: 250vh;
         display: flex;
         .container {
             display: flex;
@@ -311,7 +321,7 @@
         .story5 {
             grid-column: span 1;
             height: auto;
-            width: 380px;
+            width: 340px;
         }
         .story1, .story4, .story5 {
             height: 450px;
@@ -319,10 +329,9 @@
     }
 
     #submit-yours {
-        padding-top: 68px;
         display: flex;
-        min-height: 130vh;
-        height: auto;
+        min-height: 145vh;
+        padding-top: 80px;
         .container {
             padding: 10px 25px;
             display: flex;
@@ -347,10 +356,10 @@
     }
 
     #join-us {
-        min-height: 135vh;
-        height: auto;
+        min-height: 150vh;
+        padding-top: 80px;
         .container {
-            padding: 10px 25px;
+            padding: 0 25px;
         }
         .grid {
             grid-template-columns: 1fr;
@@ -361,7 +370,7 @@
             height: 500px;
         }
         .card1 {
-            height: 450px;
+            height: 500px;
         }
         .card1,
         .card2,
@@ -372,10 +381,10 @@
         h2 {
             font-size: 40px;
             text-align: center;
-            margin: 16px 0 16px 0;
         }
         h3 {
-          padding: 10px;  
+          padding: 10px; 
+          margin: 0; 
         }
     }
 
