@@ -1,3 +1,25 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container, section, .section {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 @media (max-width: 768px) {
   h1, h2 {
     font-size: 40px;
@@ -44,6 +66,7 @@
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23F6F6EA' viewBox='0 0 16 16'%3e%3cpath d='M2 2l12 12M2 14L14 2' stroke='%23F6F6EA' stroke-width='2'/%3e%3c/svg%3e") !important;
   }
   #landing .container {
+    display: grid;
     grid-template-columns: 1fr;
     text-align: center;
     justify-items: center;
@@ -86,24 +109,20 @@
     padding-bottom: 0;
     margin-bottom: 0;
   }
+  #ourmission .carousel-item {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
   #ourmission .carousel-item img {
     width: 100vw;
     height: auto;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  #ourmission picture img {
-    height: auto;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  #ourmission .carousel-item {
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
+  #ourmission picture img,
   #ourmission img {
     width: 100%;
+    height: auto;
     min-height: 935px;
     -o-object-fit: cover;
        object-fit: cover;
@@ -137,7 +156,8 @@
     flex-direction: column;
     gap: 1rem;
   }
-  #winner .winner-card1 .winner1, #winner .winner-card1 .winner2,
+  #winner .winner-card1 .winner1,
+  #winner .winner-card1 .winner2,
   #winner .winner-card2 .winner1,
   #winner .winner-card2 .winner2 {
     font-size: 17px;
@@ -169,7 +189,6 @@
   }
   .flex {
     display: flex;
-    grid-template-rows: min-content min-content;
     flex-direction: column;
   }
   #who-we-are {
@@ -184,7 +203,8 @@
     padding-bottom: 20px;
     margin-bottom: 30px;
   }
-  #who-we-are #heading, #who-we-are #heading2 {
+  #who-we-are #heading,
+  #who-we-are #heading2 {
     font-size: 40px;
   }
   #who-we-are .cards-grid {
@@ -198,17 +218,12 @@
     margin-top: 0 !important;
   }
   #who-we-are .card-title {
-    padding: 0px;
+    padding: 0;
+    font-size: 24px;
   }
   #who-we-are .col {
     width: 90%;
     height: auto;
-  }
-  #who-we-are .card {
-    gap: 10px;
-  }
-  #who-we-are .card .card-title {
-    font-size: 24px;
   }
   #who-we-are p {
     font-size: 12px;
@@ -276,7 +291,7 @@
   #stories .container .story-grid {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    padding: 10px 25px 10px 25px;
+    padding: 10px 25px;
     gap: 20px;
   }
   #stories .container .text {
@@ -305,7 +320,9 @@
     height: auto;
     width: 380px;
   }
-  #stories .story1, #stories .story4, #stories .story5 {
+  #stories .story1,
+  #stories .story4,
+  #stories .story5 {
     height: 450px;
   }
   #submit-yours {
@@ -323,7 +340,7 @@
   #submit-yours .container h2 {
     font-size: 40px;
     text-align: center;
-    margin: 16px 0 16px 0;
+    margin: 16px 0;
   }
   #submit-yours .layout {
     grid-template-columns: 1fr;
@@ -346,15 +363,14 @@
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  #join-us .card1, #join-us .card2 {
+  #join-us .card1,
+  #join-us .card2 {
     padding: 20px;
-    height: 500px;
+    width: 100%;
   }
   #join-us .card1 {
     height: 450px;
   }
-  #join-us .card1,
-  #join-us .card2,
   #join-us .form-inputs,
   #join-us button {
     width: 100%;
@@ -362,7 +378,7 @@
   #join-us h2 {
     font-size: 40px;
     text-align: center;
-    margin: 16px 0 16px 0;
+    margin: 16px 0;
   }
   #join-us h3 {
     padding: 10px;
