@@ -60,7 +60,7 @@
 
 
     #landing {
-        min-height: 110vh;
+        min-height: 120vh;
         .container {
             grid-template-columns: 1fr;
             text-align: center;
@@ -133,9 +133,10 @@
     }
 
     #winner {
-        min-height: 135vh;
+        min-height: 150vh;
+        align-items: start;
         .container {
-            padding: 10px 25px;
+            padding: 0 25px;
             height: 1000px;
         }
         .img-fluid {
@@ -192,13 +193,10 @@
     }
 
     #who-we-are {
-        scroll-margin-top: 68px;
-        padding-top: 68px;
-        height: min-content;
-        max-height: none;
-        .container {
-            padding-top: 20px;
-            padding-bottom: 20px;
+        align-items: start;
+        min-height: 220vh;
+         .container {
+            padding: 0;
             margin-bottom: 30px;
         }
         #heading, #heading2 {
@@ -273,8 +271,9 @@
     }
 
     #stories {
-        min-height: 250vh;
+        min-height: 270vh;
         display: flex;
+        align-items: start;
         .container {
             display: flex;
             flex-direction: column;
@@ -330,10 +329,11 @@
 
     #submit-yours {
         display: flex;
-        min-height: 145vh;
+        min-height: 160vh;
         padding-top: 80px;
+        align-items: start;
         .container {
-            padding: 10px 25px;
+            padding: 0 25px;
             display: flex;
             flex-direction: column;
             margin-bottom: 45px;
@@ -356,8 +356,9 @@
     }
 
     #join-us {
-        min-height: 150vh;
+        min-height: 170vh;
         padding-top: 80px;
+        align-items: start;
         .container {
             padding: 0 25px;
         }

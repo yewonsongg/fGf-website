@@ -55,7 +55,7 @@
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23F6F6EA' viewBox='0 0 16 16'%3e%3cpath d='M2 2l12 12M2 14L14 2' stroke='%23F6F6EA' stroke-width='2'/%3e%3c/svg%3e") !important;
   }
   #landing {
-    min-height: 110vh;
+    min-height: 120vh;
   }
   #landing .container {
     grid-template-columns: 1fr;
@@ -124,10 +124,11 @@
        object-fit: cover;
   }
   #winner {
-    min-height: 135vh;
+    min-height: 150vh;
+    align-items: start;
   }
   #winner .container {
-    padding: 10px 25px;
+    padding: 0 25px;
     height: 1000px;
   }
   #winner .img-fluid {
@@ -187,15 +188,11 @@
     flex-direction: column;
   }
   #who-we-are {
-    scroll-margin-top: 68px;
-    padding-top: 68px;
-    height: -moz-min-content;
-    height: min-content;
-    max-height: none;
+    align-items: start;
+    min-height: 220vh;
   }
   #who-we-are .container {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 0;
     margin-bottom: 30px;
   }
   #who-we-are #heading, #who-we-are #heading2 {
@@ -268,8 +265,9 @@
     margin: 0;
   }
   #stories {
-    min-height: 250vh;
+    min-height: 270vh;
     display: flex;
+    align-items: start;
   }
   #stories .container {
     display: flex;
@@ -323,11 +321,12 @@
   }
   #submit-yours {
     display: flex;
-    min-height: 145vh;
+    min-height: 160vh;
     padding-top: 80px;
+    align-items: start;
   }
   #submit-yours .container {
-    padding: 10px 25px;
+    padding: 0 25px;
     display: flex;
     flex-direction: column;
     margin-bottom: 45px;
@@ -348,8 +347,9 @@
     margin-bottom: 0;
   }
   #join-us {
-    min-height: 150vh;
+    min-height: 170vh;
     padding-top: 80px;
+    align-items: start;
   }
   #join-us .container {
     padding: 0 25px;
