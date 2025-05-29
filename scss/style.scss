@@ -95,15 +95,22 @@ h1, h2 {
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         font-size: 85px;
         font-family: 'Abhaya1', sans-serif;
-        max-width: 800px;
+    }
+    .landing-text {
+        width: 800px;  
     }
     p {
         font-family: 'Abhaya', sans-serif;
         font-size: 28px;
     }
     .container {
-        margin: 150px 500px 100px 100px;
-        padding: 0;
+        display: grid;
+        grid-template-columns: 2fr 3fr; // text : image ratio
+        align-items: center;
+        gap: 8rem;
+        margin: 0;
+        max-width: 100%;
+        padding: 50px;
     }
     .socials {
         display: flex;
@@ -126,6 +133,24 @@ h1, h2 {
         display: flex;
         align-items: center;
         gap: 1rem;
+    }
+    a {
+        font-family: 'Abhaya', sans-serif;
+        font-size: 22px;
+        color: #F6F6EA;
+        text-decoration: none;
+        &:hover {
+            color: #fcf1c5 !important;
+        }
+    }
+    .image {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 50px;
+        padding-top: 30px;
+        img {
+            max-width: 100%;
+        }
     }
 }
 
@@ -301,7 +326,7 @@ h1, h2 {
         padding-top: 23px;
     }
     .partner-info {
-        font-size: 19px;
+        font-size: 20px;
         padding: 30px;
     }
     .partner-links a {
@@ -352,7 +377,6 @@ h1, h2 {
         font-family: 'Abhaya', sans-serif;
         font-size: 18px;
         padding: 0 15px;
-        padding-right: 0;
     }
     .story1 {
         grid-column: span 2;
