@@ -189,7 +189,7 @@
   }
   #who-we-are {
     align-items: start;
-    min-height: 220vh;
+    min-height: 250vh;
   }
   #who-we-are .container {
     padding: 0;
@@ -197,6 +197,7 @@
   }
   #who-we-are #heading, #who-we-are #heading2 {
     font-size: 40px;
+    text-align: center;
   }
   #who-we-are .cards-grid {
     grid-template-columns: 1fr;
@@ -340,7 +341,7 @@
     grid-template-columns: 1fr;
   }
   #submit-yours .form {
-    height: 1000px;
+    height: 1050px;
     padding: 20px;
   }
   #submit-yours .form-inputs {
