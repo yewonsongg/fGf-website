@@ -78,6 +78,7 @@
   #landing .connect {
     flex-direction: row;
     align-items: flex-start;
+    height: 30px;
   }
   #landing .image {
     justify-content: center;
@@ -96,32 +97,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
   }
   #ourmission .container {
-    padding-bottom: 0;
     margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  #ourmission .carousel-inner,
+  #ourmission .carousel-item {
+    overflow: hidden;
   }
   #ourmission .carousel-item img {
-    width: 100vw;
-    height: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  #ourmission picture img {
-    height: auto;
+    display: block;
     width: 100%;
+    height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-  }
-  #ourmission .carousel-item {
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
-  #ourmission img {
-    width: 100%;
-    min-height: 935px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
   }
   #winner {
     min-height: 150vh;
@@ -283,13 +276,14 @@
   #stories .container .story-title {
     margin-top: 10px;
     font-size: 20px;
-    justify-self: center;
+    text-align: center;
   }
   #stories .container .story-grid {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     padding: 10px 25px 10px 25px;
     gap: 20px;
+    justify-items: center;
   }
   #stories .container .text {
     order: 2;
